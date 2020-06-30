@@ -1,0 +1,538 @@
+[INFO ] 2020-04-18 10:05:17,266 method:com.mchange.v2.log.MLog.<clinit>(MLog.java:80)
+MLog clients using log4j logging.
+[INFO ] 2020-04-18 10:05:17,649 method:com.mchange.v2.c3p0.C3P0Registry.banner(C3P0Registry.java:204)
+Initializing c3p0-0.9.2-pre5 [built 29-September-2012 19:59:04 +0000; debug? true; trace: 10]
+[DEBUG] 2020-04-18 10:05:17,769 method:com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean.reinitialize(DynamicPooledDataSourceManagerMBean.java:236)
+MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hgf8qpa912krecwnp77zm|13efbd6d] registered.
+[INFO ] 2020-04-18 10:05:18,029 method:com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getPoolManager(AbstractPoolBackedDataSource.java:510)
+Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgf8qpa912krecwnp77zm|13efbd6d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgf8qpa912krecwnp77zm|13efbd6d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/syjf_system?useUnicode=true;characterEncoding=UTF8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[DEBUG] 2020-04-18 10:05:18,140 method:com.mchange.v2.resourcepool.BasicResourcePool.incrementPendingAcquires(BasicResourcePool.java:438)
+incremented pending_acquires: 1
+[DEBUG] 2020-04-18 10:05:18,140 method:com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.<init>(BasicResourcePool.java:1774)
+Starting acquisition series. Incremented pending_acquires [1],  attempts_remaining: 30
+[DEBUG] 2020-04-18 10:05:18,140 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@6964cf67
+[DEBUG] 2020-04-18 10:05:18,140 method:com.mchange.v2.resourcepool.BasicResourcePool.incrementPendingAcquires(BasicResourcePool.java:438)
+incremented pending_acquires: 2
+[DEBUG] 2020-04-18 10:05:18,141 method:com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.<init>(BasicResourcePool.java:1774)
+Starting acquisition series. Incremented pending_acquires [2],  attempts_remaining: 30
+[DEBUG] 2020-04-18 10:05:18,141 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@5d3bc417
+[DEBUG] 2020-04-18 10:05:18,141 method:com.mchange.v2.resourcepool.BasicResourcePool.incrementPendingAcquires(BasicResourcePool.java:438)
+incremented pending_acquires: 3
+[DEBUG] 2020-04-18 10:05:18,141 method:com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.<init>(BasicResourcePool.java:1774)
+Starting acquisition series. Incremented pending_acquires [3],  attempts_remaining: 30
+[DEBUG] 2020-04-18 10:05:18,142 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@3a5bf24b
+[DEBUG] 2020-04-18 10:05:18,142 method:com.mchange.v2.resourcepool.BasicResourcePool.<init>(BasicResourcePool.java:323)
+com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+[DEBUG] 2020-04-18 10:05:18,143 method:com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:575)
+acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+[DEBUG] 2020-04-18 10:05:18,144 method:com.mchange.v2.resourcepool.BasicResourcePool.awaitAvailable(BasicResourcePool.java:1378)
+awaitAvailable(): [unknown]
+[DEBUG] 2020-04-18 10:05:18,145 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 0, unused: 0, excluded: 0]
+[DEBUG] 2020-04-18 10:05:18,979 method:com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:235)
+com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@114918d2.acquireResource() returning. 
+[DEBUG] 2020-04-18 10:05:18,979 method:com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:235)
+com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@114918d2.acquireResource() returning. 
+[DEBUG] 2020-04-18 10:05:18,979 method:com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:235)
+com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@114918d2.acquireResource() returning. 
+[DEBUG] 2020-04-18 10:05:18,985 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 1, unused: 1, excluded: 0]
+[DEBUG] 2020-04-18 10:05:18,986 method:com.mchange.v2.resourcepool.BasicResourcePool._decrementPendingAcquires(BasicResourcePool.java:459)
+decremented pending_acquires: 2
+[DEBUG] 2020-04-18 10:05:18,986 method:com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1811)
+Acquisition series terminated successfully. Decremented pending_acquires [2],  attempts_remaining: 30
+[DEBUG] 2020-04-18 10:05:18,986 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 1, unused: 0, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:05:18,987 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:05:18,987 method:com.mchange.v2.resourcepool.BasicResourcePool._decrementPendingAcquires(BasicResourcePool.java:459)
+decremented pending_acquires: 1
+[DEBUG] 2020-04-18 10:05:18,987 method:com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1811)
+Acquisition series terminated successfully. Decremented pending_acquires [1],  attempts_remaining: 30
+[DEBUG] 2020-04-18 10:05:18,987 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:05:18,987 method:com.mchange.v2.resourcepool.BasicResourcePool._decrementPendingAcquires(BasicResourcePool.java:459)
+decremented pending_acquires: 0
+[DEBUG] 2020-04-18 10:05:18,988 method:com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1811)
+Acquisition series terminated successfully. Decremented pending_acquires [0],  attempts_remaining: 30
+[DEBUG] 2020-04-18 10:05:19,059 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@12359db1
+[DEBUG] 2020-04-18 10:05:19,059 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:08:53,203 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:08:53,220 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@4eb4acd9
+[DEBUG] 2020-04-18 10:08:53,221 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:08:53,238 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:08:53,247 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@63cbdf2f
+[DEBUG] 2020-04-18 10:08:53,247 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:09:37,172 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:09:37,175 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@6b2fddbc
+[DEBUG] 2020-04-18 10:09:37,175 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:09:37,175 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:09:37,178 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@2d98bd8b
+[DEBUG] 2020-04-18 10:09:37,179 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:09:44,230 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:09:44,232 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@3b0a4de6
+[DEBUG] 2020-04-18 10:09:44,232 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:09:44,233 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:09:44,234 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@630b1a81
+[DEBUG] 2020-04-18 10:09:44,235 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:18:41,117 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:18:41,119 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@43bb68aa
+[DEBUG] 2020-04-18 10:18:41,119 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:18:41,119 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:18:41,124 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@6cf080cd
+[DEBUG] 2020-04-18 10:18:41,124 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:18:47,541 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:18:47,566 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@4dfe3342
+[DEBUG] 2020-04-18 10:18:47,566 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:46:15,826 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:46:15,833 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@53522c65
+[DEBUG] 2020-04-18 10:46:15,834 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:46:15,841 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:46:15,852 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@6effa02c
+[DEBUG] 2020-04-18 10:46:15,852 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:50:49,778 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:50:49,780 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@2718df48
+[DEBUG] 2020-04-18 10:50:49,781 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:50:49,781 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:50:49,785 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@2566445c
+[DEBUG] 2020-04-18 10:50:49,786 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:50:52,962 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:50:52,964 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@6c95a388
+[DEBUG] 2020-04-18 10:50:52,965 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:53:08,987 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:53:08,993 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@71656f27
+[DEBUG] 2020-04-18 10:53:08,993 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:53:08,998 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:53:09,006 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@350eaa86
+[DEBUG] 2020-04-18 10:53:09,007 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:54:59,922 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:54:59,924 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@3f801f75
+[DEBUG] 2020-04-18 10:54:59,924 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:54:59,924 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:54:59,927 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@215461fd
+[DEBUG] 2020-04-18 10:54:59,928 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:55:03,577 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 10:55:03,581 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@6a3ca5a2
+[DEBUG] 2020-04-18 10:55:03,581 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:01:29,294 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:01:29,299 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@5d720a32
+[DEBUG] 2020-04-18 11:01:29,300 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:01:35,861 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:01:35,868 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@1beaec73
+[DEBUG] 2020-04-18 11:01:35,869 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:03:04,689 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:03:04,692 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@1daac812
+[DEBUG] 2020-04-18 11:03:04,692 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:03:04,692 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:03:04,696 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@52358069
+[DEBUG] 2020-04-18 11:03:04,696 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:03:06,536 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:03:06,538 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@2386b2f7
+[DEBUG] 2020-04-18 11:03:06,539 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:03:06,539 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:03:06,546 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@14aaaefa
+[DEBUG] 2020-04-18 11:03:06,547 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:03:59,864 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:03:59,867 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@16a6d82
+[DEBUG] 2020-04-18 11:03:59,867 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:03:59,868 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:03:59,870 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@24718c1
+[DEBUG] 2020-04-18 11:03:59,871 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:04:03,836 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:04:03,838 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@24fdd896
+[DEBUG] 2020-04-18 11:04:03,838 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:04:26,597 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:04:26,600 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@67b4edd6
+[DEBUG] 2020-04-18 11:04:26,600 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:04:26,601 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:04:26,603 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@7bed05fa
+[DEBUG] 2020-04-18 11:04:26,603 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:05:13,509 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:05:13,515 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@511a9da4
+[DEBUG] 2020-04-18 11:05:13,515 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:05:13,519 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:05:13,538 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@6960ee16
+[DEBUG] 2020-04-18 11:05:13,539 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:06:43,873 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:06:43,875 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@ed42825
+[DEBUG] 2020-04-18 11:06:43,875 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:06:43,875 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:06:43,878 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@460492b6
+[DEBUG] 2020-04-18 11:06:43,878 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:10:51,399 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:10:51,404 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@3e54005e
+[DEBUG] 2020-04-18 11:10:51,405 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:10:51,405 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:10:51,407 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@3fa4f219
+[DEBUG] 2020-04-18 11:10:51,408 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:11:04,713 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:11:04,715 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@265bbf7e
+[DEBUG] 2020-04-18 11:11:04,715 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:11:04,715 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:11:04,717 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@5138200f
+[DEBUG] 2020-04-18 11:11:04,718 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:11:37,651 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:11:37,653 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@5b8c67e4
+[DEBUG] 2020-04-18 11:11:37,653 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:11:37,653 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:11:37,657 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@294c870b
+[DEBUG] 2020-04-18 11:11:37,658 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:38:02,440 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:38:02,449 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@1f8df8df
+[DEBUG] 2020-04-18 11:38:02,449 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:38:02,454 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:38:02,462 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@1012f146
+[DEBUG] 2020-04-18 11:38:02,462 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:58:27,014 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:58:27,020 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@21aefdc4
+[DEBUG] 2020-04-18 11:58:27,020 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:58:27,025 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:58:27,043 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@1eb8d617
+[DEBUG] 2020-04-18 11:58:27,044 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:58:30,324 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:58:30,326 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@6636f2f4
+[DEBUG] 2020-04-18 11:58:30,327 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:58:30,327 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:58:30,331 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@71b483da
+[DEBUG] 2020-04-18 11:58:30,332 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:59:33,220 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 11:59:33,223 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@74754993
+[DEBUG] 2020-04-18 11:59:33,223 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:02:56,415 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:02:56,420 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@4d97d6e5
+[DEBUG] 2020-04-18 12:02:56,421 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:03:03,615 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:03:03,619 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@7040b50f
+[DEBUG] 2020-04-18 12:03:03,620 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:07:15,722 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:07:15,727 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@456f497e
+[DEBUG] 2020-04-18 12:07:15,727 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:07:15,728 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:07:15,731 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@1b71f93
+[DEBUG] 2020-04-18 12:07:15,731 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:08:45,178 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:08:45,182 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@7327cb6f
+[DEBUG] 2020-04-18 12:08:45,182 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:08:45,183 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:08:45,189 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@4ed1bd66
+[DEBUG] 2020-04-18 12:08:45,189 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:33:54,016 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:33:54,025 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@559d7a30
+[DEBUG] 2020-04-18 12:33:54,026 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:35:30,688 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:35:30,694 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@7daf7f06
+[DEBUG] 2020-04-18 12:35:30,694 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:35:30,695 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:35:30,698 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@1350702a
+[DEBUG] 2020-04-18 12:35:30,699 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:35:30,699 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:35:30,700 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@48a0509c
+[DEBUG] 2020-04-18 12:35:30,700 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:35:34,553 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:35:34,557 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@5b2b98b0
+[DEBUG] 2020-04-18 12:35:34,557 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:36:08,511 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:36:08,516 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@2dd5270c
+[DEBUG] 2020-04-18 12:36:08,516 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:36:11,100 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:36:11,103 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@3f1228ad
+[DEBUG] 2020-04-18 12:36:11,104 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:36:14,441 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:36:14,443 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@9e992cb
+[DEBUG] 2020-04-18 12:36:14,443 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:36:55,160 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:36:55,163 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@78f3a35d
+[DEBUG] 2020-04-18 12:36:55,163 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:36:55,164 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:36:55,166 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@49de1a94
+[DEBUG] 2020-04-18 12:36:55,167 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:36:55,167 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:36:55,169 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@6d008eb
+[DEBUG] 2020-04-18 12:36:55,170 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:37:08,992 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:37:08,999 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@2e35f912
+[DEBUG] 2020-04-18 12:37:08,999 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:37:11,176 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:37:11,178 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@12cf03ea
+[DEBUG] 2020-04-18 12:37:11,179 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:37:11,427 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:37:11,432 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@63f676cf
+[DEBUG] 2020-04-18 12:37:11,432 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:38:29,642 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:38:29,645 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@34afff85
+[DEBUG] 2020-04-18 12:38:29,646 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:38:30,920 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 12:38:30,924 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@2c6c5fdb
+[DEBUG] 2020-04-18 12:38:30,925 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 14:27:04,718 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 14:27:04,730 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@1eaf1a07
+[DEBUG] 2020-04-18 14:27:04,730 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 14:27:04,730 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 14:27:04,731 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@35e26783
+[DEBUG] 2020-04-18 14:27:04,732 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 14:27:04,732 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 14:27:04,733 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@66912e16
+[DEBUG] 2020-04-18 14:27:04,733 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 14:27:12,392 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 14:27:12,394 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@67f794ce
+[DEBUG] 2020-04-18 14:27:12,394 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 15:15:56,119 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 15:15:56,124 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@3c0f5025
+[DEBUG] 2020-04-18 15:15:56,125 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 15:18:32,289 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 15:18:32,297 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@4d9e3a5
+[DEBUG] 2020-04-18 15:18:32,297 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 15:18:35,256 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 15:18:35,259 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@427b0fef
+[DEBUG] 2020-04-18 15:18:35,259 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 15:19:35,089 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 15:19:35,092 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@37706daa
+[DEBUG] 2020-04-18 15:19:35,092 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 15:20:39,886 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 15:20:39,889 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@5743814c
+[DEBUG] 2020-04-18 15:20:39,889 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 15:20:39,889 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)
+[DEBUG] 2020-04-18 15:20:39,892 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:224)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@56ea5b7: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@2bd43361
+[DEBUG] 2020-04-18 15:20:39,893 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1733)
+trace com.mchange.v2.resourcepool.BasicResourcePool@4ae8abaa [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@19954bbe)

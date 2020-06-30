@@ -1,0 +1,36 @@
+grant {
+	//对系统和用户目录“读”的权限
+	permission java.util.PropertyPermission "user.dir", "read";
+	permission java.util.PropertyPermission "user.home", "read";
+	permission java.util.PropertyPermission "java.home", "read";
+	permission java.util.PropertyPermission "java.class.path", "read";
+	permission java.util.PropertyPermission "user.name", "read";
+	
+	//对线程和线程组的操作权限
+	permission java.lang.RuntimePermission "modifyThread";
+	permission java.lang.RuntimePermission "modifyThreadGroup";
+	
+	//操作Socket端口的各种权限
+	//permission java.net.SocketPermission "80", "listen";
+	//permission java.net.SocketPermission "80", "accept";
+	//permission java.net.SocketPermission "80", "connect";
+	//permission java.net.SocketPermission "80", "read";
+	//permission java.net.SocketPermission "80", "write";
+	
+	//读写文件的权限(默认关闭该权限)
+	//permission java.io.FilePermission "F:\eclipse\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\czjf_system\upload\testIO.txt", "read";
+	//permission java.io.FilePermission "F:\eclipse\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\czjf_system\upload\testIO.txt", "write";
+	
+	
+	//退出系统的权限，例如System.exit(0)
+	permission java.lang.RuntimePermission "exitVM";
+};
+
+grant codeBase "file:/C:/classes/local/*" {
+    permission java.security.AllPermission;
+};
+grant codeBase "file:/C:/classes/remote/*" {
+    permission java.lang.reflect.ReflectPermission "suppressAccessChecks";
+    permission java.lang.RuntimePermission "accessDeclaredMembers";
+    permission java.util.PropertyPermission "*", " read,write";
+};

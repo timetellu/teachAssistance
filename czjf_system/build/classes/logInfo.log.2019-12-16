@@ -1,0 +1,939 @@
+2019-12-16 15:40:15  [ http-nio-8080-exec-6:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-12-16 15:40:15  [ http-nio-8080-exec-6:434 ] - [ INFO ]  Initializing c3p0-0.9.2-pre5 [built 29-September-2012 19:59:04 +0000; debug? true; trace: 10]
+2019-12-16 15:40:16  [ http-nio-8080-exec-6:564 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hgf7k1a73scniwonmfvy|69b2e0aa] registered.
+2019-12-16 15:40:16  [ http-nio-8080-exec-6:837 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgf7k1a73scniwonmfvy|69b2e0aa, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgf7k1a73scniwonmfvy|69b2e0aa, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/syjf_system?useUnicode=true;characterEncoding=UTF8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2019-12-16 15:40:16  [ http-nio-8080-exec-6:951 ] - [ DEBUG ]  incremented pending_acquires: 1
+2019-12-16 15:40:16  [ http-nio-8080-exec-6:952 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 15:40:16  [ http-nio-8080-exec-6:952 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@42011acd: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@20c8da73
+2019-12-16 15:40:16  [ http-nio-8080-exec-6:952 ] - [ DEBUG ]  incremented pending_acquires: 2
+2019-12-16 15:40:16  [ http-nio-8080-exec-6:953 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 15:40:16  [ http-nio-8080-exec-6:953 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@42011acd: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@1acf63f9
+2019-12-16 15:40:16  [ http-nio-8080-exec-6:953 ] - [ DEBUG ]  incremented pending_acquires: 3
+2019-12-16 15:40:16  [ http-nio-8080-exec-6:953 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [3],  attempts_remaining: 30
+2019-12-16 15:40:16  [ http-nio-8080-exec-6:953 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@42011acd: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@3b99a3b7
+2019-12-16 15:40:16  [ http-nio-8080-exec-6:954 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@7104017b config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2019-12-16 15:40:16  [ http-nio-8080-exec-6:954 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2019-12-16 15:40:16  [ http-nio-8080-exec-6:956 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2019-12-16 15:40:16  [ http-nio-8080-exec-6:957 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@7104017b [managed: 0, unused: 0, excluded: 0]
+2019-12-16 15:40:17  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:1907 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@5f18a9f0.acquireResource() returning. 
+2019-12-16 15:40:17  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:1907 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@5f18a9f0.acquireResource() returning. 
+2019-12-16 15:40:17  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:1907 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@5f18a9f0.acquireResource() returning. 
+2019-12-16 15:40:17  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:1913 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@7104017b [managed: 1, unused: 1, excluded: 0]
+2019-12-16 15:40:17  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:1914 ] - [ DEBUG ]  decremented pending_acquires: 2
+2019-12-16 15:40:17  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:1914 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 15:40:17  [ http-nio-8080-exec-6:1914 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@7104017b [managed: 1, unused: 0, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2f2122b6)
+2019-12-16 15:40:17  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:1915 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@7104017b [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2f2122b6)
+2019-12-16 15:40:17  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:1915 ] - [ DEBUG ]  decremented pending_acquires: 1
+2019-12-16 15:40:17  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:1915 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 15:40:17  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:1915 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@7104017b [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2f2122b6)
+2019-12-16 15:40:17  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:1915 ] - [ DEBUG ]  decremented pending_acquires: 0
+2019-12-16 15:40:17  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:1915 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [0],  attempts_remaining: 30
+2019-12-16 15:40:17  [ http-nio-8080-exec-6:1978 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@42011acd: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@6709fe70
+2019-12-16 15:40:17  [ http-nio-8080-exec-6:1979 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@7104017b [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2f2122b6)
+2019-12-16 15:40:21  [ http-nio-8080-exec-7:5967 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@7104017b [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2f2122b6)
+2019-12-16 15:40:21  [ http-nio-8080-exec-7:5970 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@42011acd: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@3e59323
+2019-12-16 15:40:21  [ http-nio-8080-exec-7:5971 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@7104017b [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2f2122b6)
+2019-12-16 15:41:45  [ http-nio-8080-exec-1:90176 ] - [ ERROR ]  
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cn.timetell.stringCompiler.CustomStringJavaCompiler.runMainMethod(CustomStringJavaCompiler.java:106)
+	at cn.itcast.czjf.service.ProgramService.runInputCode(ProgramService.java:26)
+	at cn.itcast.czjf.web.servlets.ProgramServlet.runInputCode(ProgramServlet.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cn.itcast.czjf.web.base.BaseServlet.doPost(BaseServlet.java:38)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at cn.itcast.czjf.web.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ArithmeticException: / by zero
+	at HelloWorld.main(HelloWorld.java:3)
+	... 39 more
+2019-12-16 15:43:31  [ http-nio-8080-exec-9:5 ] - [ ERROR ]  
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cn.timetell.stringCompiler.CustomStringJavaCompiler.runMainMethod(CustomStringJavaCompiler.java:106)
+	at cn.itcast.czjf.service.ProgramService.runInputCode(ProgramService.java:26)
+	at cn.itcast.czjf.web.servlets.ProgramServlet.runInputCode(ProgramServlet.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cn.itcast.czjf.web.base.BaseServlet.doPost(BaseServlet.java:38)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at cn.itcast.czjf.web.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ArithmeticException: / by zero
+	at HelloWorld.main(HelloWorld.java:3)
+	... 39 more
+2019-12-16 15:44:14  [ http-nio-8080-exec-11:43229 ] - [ ERROR ]  
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cn.timetell.stringCompiler.CustomStringJavaCompiler.runMainMethod(CustomStringJavaCompiler.java:106)
+	at cn.itcast.czjf.service.ProgramService.runInputCode(ProgramService.java:26)
+	at cn.itcast.czjf.web.servlets.ProgramServlet.runInputCode(ProgramServlet.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cn.itcast.czjf.web.base.BaseServlet.doPost(BaseServlet.java:38)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at cn.itcast.czjf.web.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ArithmeticException: / by zero
+	at HelloWorld.main(HelloWorld.java:3)
+	... 39 more
+2019-12-16 15:45:14  [ http-nio-8080-exec-13:103817 ] - [ ERROR ]  
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cn.timetell.stringCompiler.CustomStringJavaCompiler.runMainMethod(CustomStringJavaCompiler.java:106)
+	at cn.itcast.czjf.service.ProgramService.runInputCode(ProgramService.java:26)
+	at cn.itcast.czjf.web.servlets.ProgramServlet.runInputCode(ProgramServlet.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cn.itcast.czjf.web.base.BaseServlet.doPost(BaseServlet.java:38)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at cn.itcast.czjf.web.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ArithmeticException: / by zero
+	at HelloWorld.main(HelloWorld.java:3)
+	... 39 more
+2019-12-16 15:46:48  [ http-nio-8080-exec-13:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-12-16 15:46:48  [ http-nio-8080-exec-13:315 ] - [ INFO ]  Initializing c3p0-0.9.2-pre5 [built 29-September-2012 19:59:04 +0000; debug? true; trace: 10]
+2019-12-16 15:46:48  [ http-nio-8080-exec-13:325 ] - [ WARN ]  A C3P0Registry mbean is already registered. This probably means that an application using c3p0 was undeployed, but not all PooledDataSources were closed prior to undeployment. This may lead to resource leaks over time. Please take care to close all PooledDataSources.
+2019-12-16 15:46:48  [ http-nio-8080-exec-13:444 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hgf7k1a73sl2gz1vus09q|4eac05e0] registered.
+2019-12-16 15:46:48  [ http-nio-8080-exec-13:723 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgf7k1a73sl2gz1vus09q|4eac05e0, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgf7k1a73sl2gz1vus09q|4eac05e0, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/syjf_system?useUnicode=true;characterEncoding=UTF8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2019-12-16 15:46:49  [ http-nio-8080-exec-13:864 ] - [ DEBUG ]  incremented pending_acquires: 1
+2019-12-16 15:46:49  [ http-nio-8080-exec-13:865 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 15:46:49  [ http-nio-8080-exec-13:865 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@438bc732: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@750dcd97
+2019-12-16 15:46:49  [ http-nio-8080-exec-13:866 ] - [ DEBUG ]  incremented pending_acquires: 2
+2019-12-16 15:46:49  [ http-nio-8080-exec-13:866 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 15:46:49  [ http-nio-8080-exec-13:866 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@438bc732: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@6a706fa
+2019-12-16 15:46:49  [ http-nio-8080-exec-13:866 ] - [ DEBUG ]  incremented pending_acquires: 3
+2019-12-16 15:46:49  [ http-nio-8080-exec-13:867 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [3],  attempts_remaining: 30
+2019-12-16 15:46:49  [ http-nio-8080-exec-13:867 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@438bc732: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@4ad5dda7
+2019-12-16 15:46:49  [ http-nio-8080-exec-13:868 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@577a3198 config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2019-12-16 15:46:49  [ http-nio-8080-exec-13:868 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2019-12-16 15:46:49  [ http-nio-8080-exec-13:869 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2019-12-16 15:46:49  [ http-nio-8080-exec-13:870 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@577a3198 [managed: 0, unused: 0, excluded: 0]
+2019-12-16 15:46:49  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:972 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@4db0a2f5.acquireResource() returning. 
+2019-12-16 15:46:49  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:972 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@4db0a2f5.acquireResource() returning. 
+2019-12-16 15:46:49  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:972 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@4db0a2f5.acquireResource() returning. 
+2019-12-16 15:46:49  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:978 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@577a3198 [managed: 1, unused: 1, excluded: 0]
+2019-12-16 15:46:49  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:979 ] - [ DEBUG ]  decremented pending_acquires: 2
+2019-12-16 15:46:49  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:979 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 15:46:49  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:979 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@577a3198 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f19f0f6)
+2019-12-16 15:46:49  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:979 ] - [ DEBUG ]  decremented pending_acquires: 1
+2019-12-16 15:46:49  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:979 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 15:46:49  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:979 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@577a3198 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f19f0f6)
+2019-12-16 15:46:49  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:979 ] - [ DEBUG ]  decremented pending_acquires: 0
+2019-12-16 15:46:49  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:979 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [0],  attempts_remaining: 30
+2019-12-16 15:46:49  [ http-nio-8080-exec-13:979 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@577a3198 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f19f0f6)
+2019-12-16 15:46:49  [ http-nio-8080-exec-13:1027 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@438bc732: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@28f15dee
+2019-12-16 15:46:49  [ http-nio-8080-exec-13:1028 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@577a3198 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f19f0f6)
+2019-12-16 15:46:54  [ http-nio-8080-exec-14:6587 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@577a3198 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f19f0f6)
+2019-12-16 15:46:54  [ http-nio-8080-exec-14:6592 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@438bc732: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@1ea4f7d0
+2019-12-16 15:46:54  [ http-nio-8080-exec-14:6593 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@577a3198 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@f19f0f6)
+2019-12-16 15:47:11  [ http-nio-8080-exec-15:23391 ] - [ ERROR ]  
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cn.timetell.stringCompiler.CustomStringJavaCompiler.runMainMethod(CustomStringJavaCompiler.java:106)
+	at cn.itcast.czjf.service.ProgramService.runInputCode(ProgramService.java:26)
+	at cn.itcast.czjf.web.servlets.ProgramServlet.runInputCode(ProgramServlet.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cn.itcast.czjf.web.base.BaseServlet.doPost(BaseServlet.java:38)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at cn.itcast.czjf.web.filter.EncodingFilter.doFilter(EncodingFilter.java:33)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ArithmeticException: / by zero
+	at HelloWorld.main(HelloWorld.java:3)
+	... 39 more
+2019-12-16 15:52:15  [ main:1 ] - [ ERROR ]  / by zero
+java.lang.ArithmeticException: / by zero
+	at cn.itcast.czjf.service.TestRunException.test(TestRunException.java:15)
+	at cn.itcast.czjf.service.TestRunException.main(TestRunException.java:29)
+2019-12-16 16:04:03  [ http-nio-8080-exec-6:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-12-16 16:04:04  [ http-nio-8080-exec-6:437 ] - [ INFO ]  Initializing c3p0-0.9.2-pre5 [built 29-September-2012 19:59:04 +0000; debug? true; trace: 10]
+2019-12-16 16:04:04  [ http-nio-8080-exec-6:579 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hgf7k1a73t79oa16ucf2u|205d7ee2] registered.
+2019-12-16 16:04:04  [ http-nio-8080-exec-6:883 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgf7k1a73t79oa16ucf2u|205d7ee2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgf7k1a73t79oa16ucf2u|205d7ee2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/syjf_system?useUnicode=true;characterEncoding=UTF8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2019-12-16 16:04:04  [ http-nio-8080-exec-6:999 ] - [ DEBUG ]  incremented pending_acquires: 1
+2019-12-16 16:04:04  [ http-nio-8080-exec-6:999 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 16:04:04  [ http-nio-8080-exec-6:999 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@30b2afb6: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@679b6ede
+2019-12-16 16:04:04  [ http-nio-8080-exec-6:999 ] - [ DEBUG ]  incremented pending_acquires: 2
+2019-12-16 16:04:04  [ http-nio-8080-exec-6:1000 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 16:04:04  [ http-nio-8080-exec-6:1000 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@30b2afb6: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@c35a145
+2019-12-16 16:04:04  [ http-nio-8080-exec-6:1001 ] - [ DEBUG ]  incremented pending_acquires: 3
+2019-12-16 16:04:04  [ http-nio-8080-exec-6:1001 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [3],  attempts_remaining: 30
+2019-12-16 16:04:04  [ http-nio-8080-exec-6:1001 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@30b2afb6: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@539bcb49
+2019-12-16 16:04:04  [ http-nio-8080-exec-6:1001 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@76710193 config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2019-12-16 16:04:04  [ http-nio-8080-exec-6:1002 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2019-12-16 16:04:04  [ http-nio-8080-exec-6:1002 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2019-12-16 16:04:04  [ http-nio-8080-exec-6:1003 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@76710193 [managed: 0, unused: 0, excluded: 0]
+2019-12-16 16:04:05  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:1950 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@4f3d0238.acquireResource() returning. 
+2019-12-16 16:04:05  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:1950 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@4f3d0238.acquireResource() returning. 
+2019-12-16 16:04:05  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:1950 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@4f3d0238.acquireResource() returning. 
+2019-12-16 16:04:05  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:1956 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@76710193 [managed: 1, unused: 1, excluded: 0]
+2019-12-16 16:04:05  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:1956 ] - [ DEBUG ]  decremented pending_acquires: 2
+2019-12-16 16:04:05  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:1956 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 16:04:05  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:1956 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@76710193 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@162fe823)
+2019-12-16 16:04:05  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:1957 ] - [ DEBUG ]  decremented pending_acquires: 1
+2019-12-16 16:04:05  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:1957 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 16:04:05  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:1957 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@76710193 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@162fe823)
+2019-12-16 16:04:05  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:1957 ] - [ DEBUG ]  decremented pending_acquires: 0
+2019-12-16 16:04:05  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:1957 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [0],  attempts_remaining: 30
+2019-12-16 16:04:05  [ http-nio-8080-exec-6:1957 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@76710193 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@162fe823)
+2019-12-16 16:04:05  [ http-nio-8080-exec-6:2023 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@30b2afb6: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@1e9d4ab6
+2019-12-16 16:04:05  [ http-nio-8080-exec-6:2024 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@76710193 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@162fe823)
+2019-12-16 16:04:09  [ http-nio-8080-exec-7:6129 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@76710193 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@162fe823)
+2019-12-16 16:04:09  [ http-nio-8080-exec-7:6133 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@30b2afb6: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@39d61b36
+2019-12-16 16:04:09  [ http-nio-8080-exec-7:6135 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@76710193 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@162fe823)
+2019-12-16 16:14:25  [ http-nio-8080-exec-7:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-12-16 16:14:25  [ http-nio-8080-exec-7:280 ] - [ INFO ]  Initializing c3p0-0.9.2-pre5 [built 29-September-2012 19:59:04 +0000; debug? true; trace: 10]
+2019-12-16 16:14:25  [ http-nio-8080-exec-7:291 ] - [ WARN ]  A C3P0Registry mbean is already registered. This probably means that an application using c3p0 was undeployed, but not all PooledDataSources were closed prior to undeployment. This may lead to resource leaks over time. Please take care to close all PooledDataSources.
+2019-12-16 16:14:25  [ http-nio-8080-exec-7:395 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hgf7k1a73tkl3zniugtt|72c91b4a] registered.
+2019-12-16 16:14:25  [ http-nio-8080-exec-7:643 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgf7k1a73tkl3zniugtt|72c91b4a, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgf7k1a73tkl3zniugtt|72c91b4a, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/syjf_system?useUnicode=true;characterEncoding=UTF8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2019-12-16 16:14:26  [ http-nio-8080-exec-7:757 ] - [ DEBUG ]  incremented pending_acquires: 1
+2019-12-16 16:14:26  [ http-nio-8080-exec-7:758 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 16:14:26  [ http-nio-8080-exec-7:758 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@30ef36a6: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@2447bf0
+2019-12-16 16:14:26  [ http-nio-8080-exec-7:758 ] - [ DEBUG ]  incremented pending_acquires: 2
+2019-12-16 16:14:26  [ http-nio-8080-exec-7:759 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 16:14:26  [ http-nio-8080-exec-7:759 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@30ef36a6: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@4ad5772a
+2019-12-16 16:14:26  [ http-nio-8080-exec-7:759 ] - [ DEBUG ]  incremented pending_acquires: 3
+2019-12-16 16:14:26  [ http-nio-8080-exec-7:759 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [3],  attempts_remaining: 30
+2019-12-16 16:14:26  [ http-nio-8080-exec-7:759 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@30ef36a6: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@4b60abb
+2019-12-16 16:14:26  [ http-nio-8080-exec-7:759 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@4d25468d config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2019-12-16 16:14:26  [ http-nio-8080-exec-7:760 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2019-12-16 16:14:26  [ http-nio-8080-exec-7:760 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2019-12-16 16:14:26  [ http-nio-8080-exec-7:760 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@4d25468d [managed: 0, unused: 0, excluded: 0]
+2019-12-16 16:14:26  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:845 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@4b9e265a.acquireResource() returning. 
+2019-12-16 16:14:26  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:845 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@4b9e265a.acquireResource() returning. 
+2019-12-16 16:14:26  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:845 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@4b9e265a.acquireResource() returning. 
+2019-12-16 16:14:26  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:851 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@4d25468d [managed: 1, unused: 1, excluded: 0]
+2019-12-16 16:14:26  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:851 ] - [ DEBUG ]  decremented pending_acquires: 2
+2019-12-16 16:14:26  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:851 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 16:14:26  [ http-nio-8080-exec-7:851 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@4d25468d [managed: 1, unused: 0, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2a594561)
+2019-12-16 16:14:26  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:851 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@4d25468d [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2a594561)
+2019-12-16 16:14:26  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:852 ] - [ DEBUG ]  decremented pending_acquires: 1
+2019-12-16 16:14:26  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:852 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 16:14:26  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:852 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@4d25468d [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2a594561)
+2019-12-16 16:14:26  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:852 ] - [ DEBUG ]  decremented pending_acquires: 0
+2019-12-16 16:14:26  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:852 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [0],  attempts_remaining: 30
+2019-12-16 16:14:26  [ http-nio-8080-exec-7:904 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@30ef36a6: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@6ed5f337
+2019-12-16 16:14:26  [ http-nio-8080-exec-7:904 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@4d25468d [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2a594561)
+2019-12-16 16:14:33  [ http-nio-8080-exec-10:8410 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@4d25468d [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2a594561)
+2019-12-16 16:14:33  [ http-nio-8080-exec-10:8416 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@30ef36a6: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@781cf5c8
+2019-12-16 16:14:33  [ http-nio-8080-exec-10:8417 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@4d25468d [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2a594561)
+2019-12-16 16:20:43  [ http-nio-8080-exec-13:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-12-16 16:20:43  [ http-nio-8080-exec-13:303 ] - [ INFO ]  Initializing c3p0-0.9.2-pre5 [built 29-September-2012 19:59:04 +0000; debug? true; trace: 10]
+2019-12-16 16:20:43  [ http-nio-8080-exec-13:312 ] - [ WARN ]  A C3P0Registry mbean is already registered. This probably means that an application using c3p0 was undeployed, but not all PooledDataSources were closed prior to undeployment. This may lead to resource leaks over time. Please take care to close all PooledDataSources.
+2019-12-16 16:20:43  [ http-nio-8080-exec-13:415 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hgf7k1a73tsorl88g4lz|78b472b3] registered.
+2019-12-16 16:20:43  [ http-nio-8080-exec-13:664 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgf7k1a73tsorl88g4lz|78b472b3, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgf7k1a73tsorl88g4lz|78b472b3, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/syjf_system?useUnicode=true;characterEncoding=UTF8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2019-12-16 16:20:44  [ http-nio-8080-exec-13:774 ] - [ DEBUG ]  incremented pending_acquires: 1
+2019-12-16 16:20:44  [ http-nio-8080-exec-13:775 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 16:20:44  [ http-nio-8080-exec-13:775 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@2501bd13: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@279810e
+2019-12-16 16:20:44  [ http-nio-8080-exec-13:775 ] - [ DEBUG ]  incremented pending_acquires: 2
+2019-12-16 16:20:44  [ http-nio-8080-exec-13:775 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 16:20:44  [ http-nio-8080-exec-13:775 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@2501bd13: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@199572db
+2019-12-16 16:20:44  [ http-nio-8080-exec-13:776 ] - [ DEBUG ]  incremented pending_acquires: 3
+2019-12-16 16:20:44  [ http-nio-8080-exec-13:776 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [3],  attempts_remaining: 30
+2019-12-16 16:20:44  [ http-nio-8080-exec-13:776 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@2501bd13: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@5d46621
+2019-12-16 16:20:44  [ http-nio-8080-exec-13:776 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@2d15aaad config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2019-12-16 16:20:44  [ http-nio-8080-exec-13:776 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2019-12-16 16:20:44  [ http-nio-8080-exec-13:776 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2019-12-16 16:20:44  [ http-nio-8080-exec-13:777 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@2d15aaad [managed: 0, unused: 0, excluded: 0]
+2019-12-16 16:20:44  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:875 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@564790b2.acquireResource() returning. 
+2019-12-16 16:20:44  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:875 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@564790b2.acquireResource() returning. 
+2019-12-16 16:20:44  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:875 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@564790b2.acquireResource() returning. 
+2019-12-16 16:20:44  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:880 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@2d15aaad [managed: 1, unused: 1, excluded: 0]
+2019-12-16 16:20:44  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:881 ] - [ DEBUG ]  decremented pending_acquires: 2
+2019-12-16 16:20:44  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:881 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 16:20:44  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:881 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@2d15aaad [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@649eb859)
+2019-12-16 16:20:44  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:881 ] - [ DEBUG ]  decremented pending_acquires: 1
+2019-12-16 16:20:44  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:881 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 16:20:44  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:881 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@2d15aaad [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@649eb859)
+2019-12-16 16:20:44  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:881 ] - [ DEBUG ]  decremented pending_acquires: 0
+2019-12-16 16:20:44  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:881 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [0],  attempts_remaining: 30
+2019-12-16 16:20:44  [ http-nio-8080-exec-13:881 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@2d15aaad [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@649eb859)
+2019-12-16 16:20:44  [ http-nio-8080-exec-13:921 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@2501bd13: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@69ed2108
+2019-12-16 16:20:44  [ http-nio-8080-exec-13:921 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@2d15aaad [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@649eb859)
+2019-12-16 16:20:49  [ http-nio-8080-exec-11:6046 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@2d15aaad [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@649eb859)
+2019-12-16 16:20:49  [ http-nio-8080-exec-11:6049 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@2501bd13: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@6176cb83
+2019-12-16 16:20:49  [ http-nio-8080-exec-11:6050 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@2d15aaad [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@649eb859)
+2019-12-16 16:29:57  [ http-nio-8080-exec-24:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-12-16 16:29:57  [ http-nio-8080-exec-24:293 ] - [ INFO ]  Initializing c3p0-0.9.2-pre5 [built 29-September-2012 19:59:04 +0000; debug? true; trace: 10]
+2019-12-16 16:29:57  [ http-nio-8080-exec-24:303 ] - [ WARN ]  A C3P0Registry mbean is already registered. This probably means that an application using c3p0 was undeployed, but not all PooledDataSources were closed prior to undeployment. This may lead to resource leaks over time. Please take care to close all PooledDataSources.
+2019-12-16 16:29:57  [ http-nio-8080-exec-24:400 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hgf7k1a73u4k201013gvu|2c6da738] registered.
+2019-12-16 16:29:57  [ http-nio-8080-exec-24:642 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgf7k1a73u4k201013gvu|2c6da738, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgf7k1a73u4k201013gvu|2c6da738, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/syjf_system?useUnicode=true;characterEncoding=UTF8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2019-12-16 16:29:57  [ http-nio-8080-exec-24:744 ] - [ DEBUG ]  incremented pending_acquires: 1
+2019-12-16 16:29:57  [ http-nio-8080-exec-24:745 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 16:29:57  [ http-nio-8080-exec-24:745 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@62e0632: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@49e75841
+2019-12-16 16:29:57  [ http-nio-8080-exec-24:745 ] - [ DEBUG ]  incremented pending_acquires: 2
+2019-12-16 16:29:57  [ http-nio-8080-exec-24:745 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 16:29:57  [ http-nio-8080-exec-24:746 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@62e0632: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@4e4de83d
+2019-12-16 16:29:57  [ http-nio-8080-exec-24:746 ] - [ DEBUG ]  incremented pending_acquires: 3
+2019-12-16 16:29:57  [ http-nio-8080-exec-24:746 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [3],  attempts_remaining: 30
+2019-12-16 16:29:57  [ http-nio-8080-exec-24:746 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@62e0632: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@4564aa7b
+2019-12-16 16:29:57  [ http-nio-8080-exec-24:746 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@330d2b73 config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2019-12-16 16:29:57  [ http-nio-8080-exec-24:747 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2019-12-16 16:29:57  [ http-nio-8080-exec-24:747 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2019-12-16 16:29:57  [ http-nio-8080-exec-24:747 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@330d2b73 [managed: 0, unused: 0, excluded: 0]
+2019-12-16 16:29:57  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:832 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@4c654e02.acquireResource() returning. 
+2019-12-16 16:29:57  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:832 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@4c654e02.acquireResource() returning. 
+2019-12-16 16:29:57  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:832 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@4c654e02.acquireResource() returning. 
+2019-12-16 16:29:57  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:838 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@330d2b73 [managed: 1, unused: 1, excluded: 0]
+2019-12-16 16:29:57  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:838 ] - [ DEBUG ]  decremented pending_acquires: 2
+2019-12-16 16:29:57  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:838 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 16:29:57  [ http-nio-8080-exec-24:838 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@330d2b73 [managed: 1, unused: 0, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1befe135)
+2019-12-16 16:29:57  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:839 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@330d2b73 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1befe135)
+2019-12-16 16:29:57  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:839 ] - [ DEBUG ]  decremented pending_acquires: 1
+2019-12-16 16:29:57  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:839 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 16:29:57  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:839 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@330d2b73 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1befe135)
+2019-12-16 16:29:57  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:839 ] - [ DEBUG ]  decremented pending_acquires: 0
+2019-12-16 16:29:57  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:839 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [0],  attempts_remaining: 30
+2019-12-16 16:29:57  [ http-nio-8080-exec-24:876 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@62e0632: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@26362419
+2019-12-16 16:29:57  [ http-nio-8080-exec-24:877 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@330d2b73 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1befe135)
+2019-12-16 16:30:02  [ http-nio-8080-exec-33:5549 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@330d2b73 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1befe135)
+2019-12-16 16:30:02  [ http-nio-8080-exec-33:5553 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@62e0632: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@1d8ca10f
+2019-12-16 16:30:02  [ http-nio-8080-exec-33:5554 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@330d2b73 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1befe135)
+2019-12-16 16:31:47  [ http-nio-8080-exec-42:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-12-16 16:31:47  [ http-nio-8080-exec-42:281 ] - [ INFO ]  Initializing c3p0-0.9.2-pre5 [built 29-September-2012 19:59:04 +0000; debug? true; trace: 10]
+2019-12-16 16:31:47  [ http-nio-8080-exec-42:291 ] - [ WARN ]  A C3P0Registry mbean is already registered. This probably means that an application using c3p0 was undeployed, but not all PooledDataSources were closed prior to undeployment. This may lead to resource leaks over time. Please take care to close all PooledDataSources.
+2019-12-16 16:31:47  [ http-nio-8080-exec-42:386 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hgf7k1a73u6x6cawp74|2a0d78d4] registered.
+2019-12-16 16:31:48  [ http-nio-8080-exec-42:639 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgf7k1a73u6x6cawp74|2a0d78d4, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgf7k1a73u6x6cawp74|2a0d78d4, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/syjf_system?useUnicode=true;characterEncoding=UTF8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2019-12-16 16:31:48  [ http-nio-8080-exec-42:743 ] - [ DEBUG ]  incremented pending_acquires: 1
+2019-12-16 16:31:48  [ http-nio-8080-exec-42:744 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 16:31:48  [ http-nio-8080-exec-42:744 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@650e7a76: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@12c8f8cb
+2019-12-16 16:31:48  [ http-nio-8080-exec-42:744 ] - [ DEBUG ]  incremented pending_acquires: 2
+2019-12-16 16:31:48  [ http-nio-8080-exec-42:744 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 16:31:48  [ http-nio-8080-exec-42:745 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@650e7a76: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@6bba798b
+2019-12-16 16:31:48  [ http-nio-8080-exec-42:745 ] - [ DEBUG ]  incremented pending_acquires: 3
+2019-12-16 16:31:48  [ http-nio-8080-exec-42:745 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [3],  attempts_remaining: 30
+2019-12-16 16:31:48  [ http-nio-8080-exec-42:745 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@650e7a76: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@377ba122
+2019-12-16 16:31:48  [ http-nio-8080-exec-42:745 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@21b0b071 config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2019-12-16 16:31:48  [ http-nio-8080-exec-42:745 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2019-12-16 16:31:48  [ http-nio-8080-exec-42:746 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2019-12-16 16:31:48  [ http-nio-8080-exec-42:746 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@21b0b071 [managed: 0, unused: 0, excluded: 0]
+2019-12-16 16:31:48  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:831 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@456fb2a.acquireResource() returning. 
+2019-12-16 16:31:48  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:831 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@456fb2a.acquireResource() returning. 
+2019-12-16 16:31:48  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:831 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@456fb2a.acquireResource() returning. 
+2019-12-16 16:31:48  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:836 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@21b0b071 [managed: 1, unused: 1, excluded: 0]
+2019-12-16 16:31:48  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:836 ] - [ DEBUG ]  decremented pending_acquires: 2
+2019-12-16 16:31:48  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:837 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 16:31:48  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:837 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@21b0b071 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@4dd4e952)
+2019-12-16 16:31:48  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:837 ] - [ DEBUG ]  decremented pending_acquires: 1
+2019-12-16 16:31:48  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:837 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 16:31:48  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:837 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@21b0b071 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@4dd4e952)
+2019-12-16 16:31:48  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:837 ] - [ DEBUG ]  decremented pending_acquires: 0
+2019-12-16 16:31:48  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:837 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [0],  attempts_remaining: 30
+2019-12-16 16:31:48  [ http-nio-8080-exec-42:837 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@21b0b071 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@4dd4e952)
+2019-12-16 16:31:48  [ http-nio-8080-exec-42:876 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@650e7a76: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@142105f9
+2019-12-16 16:31:48  [ http-nio-8080-exec-42:876 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@21b0b071 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@4dd4e952)
+2019-12-16 16:31:54  [ http-nio-8080-exec-36:7375 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@21b0b071 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@4dd4e952)
+2019-12-16 16:31:54  [ http-nio-8080-exec-36:7378 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@650e7a76: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@3575ecfc
+2019-12-16 16:31:54  [ http-nio-8080-exec-36:7379 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@21b0b071 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@4dd4e952)
+2019-12-16 16:37:03  [ http-nio-8080-exec-56:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-12-16 16:37:04  [ http-nio-8080-exec-56:280 ] - [ INFO ]  Initializing c3p0-0.9.2-pre5 [built 29-September-2012 19:59:04 +0000; debug? true; trace: 10]
+2019-12-16 16:37:04  [ http-nio-8080-exec-56:290 ] - [ WARN ]  A C3P0Registry mbean is already registered. This probably means that an application using c3p0 was undeployed, but not all PooledDataSources were closed prior to undeployment. This may lead to resource leaks over time. Please take care to close all PooledDataSources.
+2019-12-16 16:37:04  [ http-nio-8080-exec-56:386 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hgf7k1a73udpf31l92wsn|26af8c7e] registered.
+2019-12-16 16:37:04  [ http-nio-8080-exec-56:631 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgf7k1a73udpf31l92wsn|26af8c7e, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgf7k1a73udpf31l92wsn|26af8c7e, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/syjf_system?useUnicode=true;characterEncoding=UTF8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2019-12-16 16:37:04  [ http-nio-8080-exec-56:741 ] - [ DEBUG ]  incremented pending_acquires: 1
+2019-12-16 16:37:04  [ http-nio-8080-exec-56:741 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 16:37:04  [ http-nio-8080-exec-56:741 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@693316ec: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@11e5fbda
+2019-12-16 16:37:04  [ http-nio-8080-exec-56:741 ] - [ DEBUG ]  incremented pending_acquires: 2
+2019-12-16 16:37:04  [ http-nio-8080-exec-56:742 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 16:37:04  [ http-nio-8080-exec-56:742 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@693316ec: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@2086c7a1
+2019-12-16 16:37:04  [ http-nio-8080-exec-56:742 ] - [ DEBUG ]  incremented pending_acquires: 3
+2019-12-16 16:37:04  [ http-nio-8080-exec-56:742 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [3],  attempts_remaining: 30
+2019-12-16 16:37:04  [ http-nio-8080-exec-56:743 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@693316ec: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@1597cada
+2019-12-16 16:37:04  [ http-nio-8080-exec-56:743 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@64622af2 config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2019-12-16 16:37:04  [ http-nio-8080-exec-56:743 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2019-12-16 16:37:04  [ http-nio-8080-exec-56:743 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2019-12-16 16:37:04  [ http-nio-8080-exec-56:744 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@64622af2 [managed: 0, unused: 0, excluded: 0]
+2019-12-16 16:37:04  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:922 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@22709479.acquireResource() returning. 
+2019-12-16 16:37:04  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:922 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@22709479.acquireResource() returning. 
+2019-12-16 16:37:04  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:922 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@22709479.acquireResource() returning. 
+2019-12-16 16:37:04  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:928 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@64622af2 [managed: 1, unused: 1, excluded: 0]
+2019-12-16 16:37:04  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:928 ] - [ DEBUG ]  decremented pending_acquires: 2
+2019-12-16 16:37:04  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:928 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 16:37:04  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:928 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@64622af2 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@4d534f73)
+2019-12-16 16:37:04  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:928 ] - [ DEBUG ]  decremented pending_acquires: 1
+2019-12-16 16:37:04  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:928 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 16:37:04  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:928 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@64622af2 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@4d534f73)
+2019-12-16 16:37:04  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:929 ] - [ DEBUG ]  decremented pending_acquires: 0
+2019-12-16 16:37:04  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:929 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [0],  attempts_remaining: 30
+2019-12-16 16:37:04  [ http-nio-8080-exec-56:929 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@64622af2 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@4d534f73)
+2019-12-16 16:37:04  [ http-nio-8080-exec-56:972 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@693316ec: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@3edacbad
+2019-12-16 16:37:04  [ http-nio-8080-exec-56:972 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@64622af2 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@4d534f73)
+2019-12-16 16:37:09  [ http-nio-8080-exec-57:5751 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@64622af2 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@4d534f73)
+2019-12-16 16:37:09  [ http-nio-8080-exec-57:5754 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@693316ec: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@bea5045
+2019-12-16 16:37:09  [ http-nio-8080-exec-57:5754 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@64622af2 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@4d534f73)
+2019-12-16 17:36:27  [ http-nio-8080-exec-6:1 ] - [ INFO ]  MLog clients using log4j logging.
+2019-12-16 17:36:28  [ http-nio-8080-exec-6:476 ] - [ INFO ]  Initializing c3p0-0.9.2-pre5 [built 29-September-2012 19:59:04 +0000; debug? true; trace: 10]
+2019-12-16 17:36:28  [ http-nio-8080-exec-6:617 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hgf7k1a73wi3fz1kmkk5p|70b95e47] registered.
+2019-12-16 17:36:28  [ http-nio-8080-exec-6:950 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgf7k1a73wi3fz1kmkk5p|70b95e47, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgf7k1a73wi3fz1kmkk5p|70b95e47, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/syjf_system?useUnicode=true;characterEncoding=UTF8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2019-12-16 17:36:28  [ http-nio-8080-exec-6:1091 ] - [ DEBUG ]  incremented pending_acquires: 1
+2019-12-16 17:36:28  [ http-nio-8080-exec-6:1092 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 17:36:28  [ http-nio-8080-exec-6:1092 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@60ed7e8c: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@6258e74c
+2019-12-16 17:36:28  [ http-nio-8080-exec-6:1093 ] - [ DEBUG ]  incremented pending_acquires: 2
+2019-12-16 17:36:28  [ http-nio-8080-exec-6:1093 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 17:36:28  [ http-nio-8080-exec-6:1094 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@60ed7e8c: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@3298801d
+2019-12-16 17:36:28  [ http-nio-8080-exec-6:1095 ] - [ DEBUG ]  incremented pending_acquires: 3
+2019-12-16 17:36:28  [ http-nio-8080-exec-6:1095 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [3],  attempts_remaining: 30
+2019-12-16 17:36:28  [ http-nio-8080-exec-6:1095 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@60ed7e8c: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@2fa524cf
+2019-12-16 17:36:28  [ http-nio-8080-exec-6:1095 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@243736a9 config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2019-12-16 17:36:28  [ http-nio-8080-exec-6:1096 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2019-12-16 17:36:28  [ http-nio-8080-exec-6:1096 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2019-12-16 17:36:28  [ http-nio-8080-exec-6:1098 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@243736a9 [managed: 0, unused: 0, excluded: 0]
+2019-12-16 17:36:30  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:2291 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@4d6869c.acquireResource() returning. 
+2019-12-16 17:36:30  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:2291 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@4d6869c.acquireResource() returning. 
+2019-12-16 17:36:30  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:2291 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@4d6869c.acquireResource() returning. 
+2019-12-16 17:36:30  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:2297 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@243736a9 [managed: 1, unused: 1, excluded: 0]
+2019-12-16 17:36:30  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:2297 ] - [ DEBUG ]  decremented pending_acquires: 2
+2019-12-16 17:36:30  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:2298 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 17:36:30  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:2298 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@243736a9 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@8c90426)
+2019-12-16 17:36:30  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:2298 ] - [ DEBUG ]  decremented pending_acquires: 1
+2019-12-16 17:36:30  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:2298 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 17:36:30  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:2298 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@243736a9 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@8c90426)
+2019-12-16 17:36:30  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:2299 ] - [ DEBUG ]  decremented pending_acquires: 0
+2019-12-16 17:36:30  [ http-nio-8080-exec-6:2299 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@243736a9 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@8c90426)
+2019-12-16 17:36:30  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:2299 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [0],  attempts_remaining: 30
+2019-12-16 17:36:30  [ http-nio-8080-exec-6:2380 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@60ed7e8c: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@7978b2ac
+2019-12-16 17:36:30  [ http-nio-8080-exec-6:2380 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@243736a9 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@8c90426)
+2019-12-16 17:36:32  [ http-nio-8080-exec-7:5161 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@243736a9 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@8c90426)
+2019-12-16 17:36:32  [ http-nio-8080-exec-7:5165 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@60ed7e8c: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@402ad953
+2019-12-16 17:36:32  [ http-nio-8080-exec-7:5166 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@243736a9 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@8c90426)
+2019-12-16 17:49:32  [ http-nio-8080-exec-11:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-12-16 17:49:32  [ http-nio-8080-exec-11:334 ] - [ INFO ]  Initializing c3p0-0.9.2-pre5 [built 29-September-2012 19:59:04 +0000; debug? true; trace: 10]
+2019-12-16 17:49:32  [ http-nio-8080-exec-11:346 ] - [ WARN ]  A C3P0Registry mbean is already registered. This probably means that an application using c3p0 was undeployed, but not all PooledDataSources were closed prior to undeployment. This may lead to resource leaks over time. Please take care to close all PooledDataSources.
+2019-12-16 17:49:32  [ http-nio-8080-exec-11:449 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hgf7k1a73wywi31na4jwy|6f656008] registered.
+2019-12-16 17:49:32  [ http-nio-8080-exec-11:776 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgf7k1a73wywi31na4jwy|6f656008, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgf7k1a73wywi31na4jwy|6f656008, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/syjf_system?useUnicode=true;characterEncoding=UTF8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2019-12-16 17:49:32  [ http-nio-8080-exec-11:918 ] - [ DEBUG ]  incremented pending_acquires: 1
+2019-12-16 17:49:32  [ http-nio-8080-exec-11:919 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 17:49:32  [ http-nio-8080-exec-11:920 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@3cc77a2: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@3ca0a673
+2019-12-16 17:49:32  [ http-nio-8080-exec-11:920 ] - [ DEBUG ]  incremented pending_acquires: 2
+2019-12-16 17:49:32  [ http-nio-8080-exec-11:921 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 17:49:32  [ http-nio-8080-exec-11:922 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@3cc77a2: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@502b5550
+2019-12-16 17:49:32  [ http-nio-8080-exec-11:922 ] - [ DEBUG ]  incremented pending_acquires: 3
+2019-12-16 17:49:32  [ http-nio-8080-exec-11:922 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [3],  attempts_remaining: 30
+2019-12-16 17:49:32  [ http-nio-8080-exec-11:924 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@3cc77a2: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@5d37a22d
+2019-12-16 17:49:32  [ http-nio-8080-exec-11:925 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@3da6af4e config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2019-12-16 17:49:32  [ http-nio-8080-exec-11:926 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2019-12-16 17:49:32  [ http-nio-8080-exec-11:927 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2019-12-16 17:49:32  [ http-nio-8080-exec-11:929 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@3da6af4e [managed: 0, unused: 0, excluded: 0]
+2019-12-16 17:49:33  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:1044 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@64e608eb.acquireResource() returning. 
+2019-12-16 17:49:33  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:1044 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@64e608eb.acquireResource() returning. 
+2019-12-16 17:49:33  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:1044 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@64e608eb.acquireResource() returning. 
+2019-12-16 17:49:33  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:1049 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@3da6af4e [managed: 1, unused: 1, excluded: 0]
+2019-12-16 17:49:33  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:1050 ] - [ DEBUG ]  decremented pending_acquires: 2
+2019-12-16 17:49:33  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:1050 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 17:49:33  [ http-nio-8080-exec-11:1050 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@3da6af4e [managed: 1, unused: 0, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d439e4b)
+2019-12-16 17:49:33  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:1050 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@3da6af4e [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d439e4b)
+2019-12-16 17:49:33  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:1051 ] - [ DEBUG ]  decremented pending_acquires: 1
+2019-12-16 17:49:33  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:1051 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 17:49:33  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:1051 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@3da6af4e [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d439e4b)
+2019-12-16 17:49:33  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:1051 ] - [ DEBUG ]  decremented pending_acquires: 0
+2019-12-16 17:49:33  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:1051 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [0],  attempts_remaining: 30
+2019-12-16 17:49:33  [ http-nio-8080-exec-11:1101 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@3cc77a2: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@7eff8db9
+2019-12-16 17:49:33  [ http-nio-8080-exec-11:1101 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@3da6af4e [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d439e4b)
+2019-12-16 17:49:37  [ http-nio-8080-exec-2:5704 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@3da6af4e [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d439e4b)
+2019-12-16 17:49:37  [ http-nio-8080-exec-2:5708 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@3cc77a2: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@71a18735
+2019-12-16 17:49:37  [ http-nio-8080-exec-2:5709 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@3da6af4e [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d439e4b)
+2019-12-16 17:57:38  [ http-nio-8080-exec-12:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-12-16 17:57:38  [ http-nio-8080-exec-12:297 ] - [ INFO ]  Initializing c3p0-0.9.2-pre5 [built 29-September-2012 19:59:04 +0000; debug? true; trace: 10]
+2019-12-16 17:57:38  [ http-nio-8080-exec-12:306 ] - [ WARN ]  A C3P0Registry mbean is already registered. This probably means that an application using c3p0 was undeployed, but not all PooledDataSources were closed prior to undeployment. This may lead to resource leaks over time. Please take care to close all PooledDataSources.
+2019-12-16 17:57:38  [ http-nio-8080-exec-12:408 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hgf7k1a73x9boqbgj8xh|77b7febc] registered.
+2019-12-16 17:57:38  [ http-nio-8080-exec-12:657 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgf7k1a73x9boqbgj8xh|77b7febc, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgf7k1a73x9boqbgj8xh|77b7febc, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/syjf_system?useUnicode=true;characterEncoding=UTF8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2019-12-16 17:57:39  [ http-nio-8080-exec-12:763 ] - [ DEBUG ]  incremented pending_acquires: 1
+2019-12-16 17:57:39  [ http-nio-8080-exec-12:763 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 17:57:39  [ http-nio-8080-exec-12:763 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@518ea880: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@6aee59c6
+2019-12-16 17:57:39  [ http-nio-8080-exec-12:763 ] - [ DEBUG ]  incremented pending_acquires: 2
+2019-12-16 17:57:39  [ http-nio-8080-exec-12:764 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 17:57:39  [ http-nio-8080-exec-12:764 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@518ea880: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@442b8fcf
+2019-12-16 17:57:39  [ http-nio-8080-exec-12:764 ] - [ DEBUG ]  incremented pending_acquires: 3
+2019-12-16 17:57:39  [ http-nio-8080-exec-12:764 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [3],  attempts_remaining: 30
+2019-12-16 17:57:39  [ http-nio-8080-exec-12:764 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@518ea880: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@4b4a1500
+2019-12-16 17:57:39  [ http-nio-8080-exec-12:765 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@6f246e41 config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2019-12-16 17:57:39  [ http-nio-8080-exec-12:765 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2019-12-16 17:57:39  [ http-nio-8080-exec-12:765 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2019-12-16 17:57:39  [ http-nio-8080-exec-12:765 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@6f246e41 [managed: 0, unused: 0, excluded: 0]
+2019-12-16 17:57:39  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:1010 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@31564cea.acquireResource() returning. 
+2019-12-16 17:57:39  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:1010 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@31564cea.acquireResource() returning. 
+2019-12-16 17:57:39  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:1010 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@31564cea.acquireResource() returning. 
+2019-12-16 17:57:39  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:1015 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@6f246e41 [managed: 1, unused: 1, excluded: 0]
+2019-12-16 17:57:39  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:1016 ] - [ DEBUG ]  decremented pending_acquires: 2
+2019-12-16 17:57:39  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:1016 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 17:57:39  [ http-nio-8080-exec-12:1016 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@6f246e41 [managed: 1, unused: 0, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2966001e)
+2019-12-16 17:57:39  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:1016 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@6f246e41 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2966001e)
+2019-12-16 17:57:39  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:1016 ] - [ DEBUG ]  decremented pending_acquires: 1
+2019-12-16 17:57:39  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:1017 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 17:57:39  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:1017 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@6f246e41 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2966001e)
+2019-12-16 17:57:39  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:1017 ] - [ DEBUG ]  decremented pending_acquires: 0
+2019-12-16 17:57:39  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:1017 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [0],  attempts_remaining: 30
+2019-12-16 17:57:39  [ http-nio-8080-exec-12:1052 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@518ea880: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@740907a6
+2019-12-16 17:57:39  [ http-nio-8080-exec-12:1053 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@6f246e41 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2966001e)
+2019-12-16 17:57:42  [ http-nio-8080-exec-16:4044 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@6f246e41 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2966001e)
+2019-12-16 17:57:42  [ http-nio-8080-exec-16:4047 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@518ea880: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@1469c4a4
+2019-12-16 17:57:42  [ http-nio-8080-exec-16:4047 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@6f246e41 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2966001e)
+2019-12-16 18:00:07  [ http-nio-8080-exec-25:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-12-16 18:00:07  [ http-nio-8080-exec-25:297 ] - [ INFO ]  Initializing c3p0-0.9.2-pre5 [built 29-September-2012 19:59:04 +0000; debug? true; trace: 10]
+2019-12-16 18:00:07  [ http-nio-8080-exec-25:307 ] - [ WARN ]  A C3P0Registry mbean is already registered. This probably means that an application using c3p0 was undeployed, but not all PooledDataSources were closed prior to undeployment. This may lead to resource leaks over time. Please take care to close all PooledDataSources.
+2019-12-16 18:00:07  [ http-nio-8080-exec-25:401 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hgf7k1a73xcikt1q3kjo6|7bd2edc8] registered.
+2019-12-16 18:00:07  [ http-nio-8080-exec-25:650 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgf7k1a73xcikt1q3kjo6|7bd2edc8, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgf7k1a73xcikt1q3kjo6|7bd2edc8, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/syjf_system?useUnicode=true;characterEncoding=UTF8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2019-12-16 18:00:07  [ http-nio-8080-exec-25:754 ] - [ DEBUG ]  incremented pending_acquires: 1
+2019-12-16 18:00:07  [ http-nio-8080-exec-25:754 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 18:00:07  [ http-nio-8080-exec-25:754 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@1cb145e0: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@7c86cca2
+2019-12-16 18:00:07  [ http-nio-8080-exec-25:754 ] - [ DEBUG ]  incremented pending_acquires: 2
+2019-12-16 18:00:07  [ http-nio-8080-exec-25:755 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 18:00:07  [ http-nio-8080-exec-25:755 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@1cb145e0: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@61133e75
+2019-12-16 18:00:07  [ http-nio-8080-exec-25:755 ] - [ DEBUG ]  incremented pending_acquires: 3
+2019-12-16 18:00:07  [ http-nio-8080-exec-25:755 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [3],  attempts_remaining: 30
+2019-12-16 18:00:07  [ http-nio-8080-exec-25:755 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@1cb145e0: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@190a5f05
+2019-12-16 18:00:07  [ http-nio-8080-exec-25:756 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@f029781 config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2019-12-16 18:00:07  [ http-nio-8080-exec-25:756 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2019-12-16 18:00:07  [ http-nio-8080-exec-25:756 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2019-12-16 18:00:07  [ http-nio-8080-exec-25:756 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@f029781 [managed: 0, unused: 0, excluded: 0]
+2019-12-16 18:00:08  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:1029 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1336521b.acquireResource() returning. 
+2019-12-16 18:00:08  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:1029 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1336521b.acquireResource() returning. 
+2019-12-16 18:00:08  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:1029 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1336521b.acquireResource() returning. 
+2019-12-16 18:00:08  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:1035 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@f029781 [managed: 1, unused: 1, excluded: 0]
+2019-12-16 18:00:08  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:1035 ] - [ DEBUG ]  decremented pending_acquires: 2
+2019-12-16 18:00:08  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:1035 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 18:00:08  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:1035 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@f029781 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@58b0086b)
+2019-12-16 18:00:08  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:1036 ] - [ DEBUG ]  decremented pending_acquires: 1
+2019-12-16 18:00:08  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:1036 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 18:00:08  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:1036 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@f029781 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@58b0086b)
+2019-12-16 18:00:08  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:1036 ] - [ DEBUG ]  decremented pending_acquires: 0
+2019-12-16 18:00:08  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:1036 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [0],  attempts_remaining: 30
+2019-12-16 18:00:08  [ http-nio-8080-exec-25:1036 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@f029781 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@58b0086b)
+2019-12-16 18:00:08  [ http-nio-8080-exec-25:1111 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@1cb145e0: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@504ac59c
+2019-12-16 18:00:08  [ http-nio-8080-exec-25:1111 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@f029781 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@58b0086b)
+2019-12-16 18:00:11  [ http-nio-8080-exec-19:4645 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@f029781 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@58b0086b)
+2019-12-16 18:00:11  [ http-nio-8080-exec-19:4648 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@1cb145e0: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@6b4e94bf
+2019-12-16 18:00:11  [ http-nio-8080-exec-19:4648 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@f029781 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@58b0086b)
+2019-12-16 18:01:56  [ http-nio-8080-exec-32:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-12-16 18:01:57  [ http-nio-8080-exec-32:293 ] - [ INFO ]  Initializing c3p0-0.9.2-pre5 [built 29-September-2012 19:59:04 +0000; debug? true; trace: 10]
+2019-12-16 18:01:57  [ http-nio-8080-exec-32:302 ] - [ WARN ]  A C3P0Registry mbean is already registered. This probably means that an application using c3p0 was undeployed, but not all PooledDataSources were closed prior to undeployment. This may lead to resource leaks over time. Please take care to close all PooledDataSources.
+2019-12-16 18:01:57  [ http-nio-8080-exec-32:395 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hgf7k1a73xev992vwbli|244ba9e8] registered.
+2019-12-16 18:01:57  [ http-nio-8080-exec-32:631 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgf7k1a73xev992vwbli|244ba9e8, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgf7k1a73xev992vwbli|244ba9e8, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/syjf_system?useUnicode=true;characterEncoding=UTF8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2019-12-16 18:01:57  [ http-nio-8080-exec-32:732 ] - [ DEBUG ]  incremented pending_acquires: 1
+2019-12-16 18:01:57  [ http-nio-8080-exec-32:733 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 18:01:57  [ http-nio-8080-exec-32:733 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@338b2583: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@28cc3da5
+2019-12-16 18:01:57  [ http-nio-8080-exec-32:733 ] - [ DEBUG ]  incremented pending_acquires: 2
+2019-12-16 18:01:57  [ http-nio-8080-exec-32:733 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 18:01:57  [ http-nio-8080-exec-32:733 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@338b2583: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@50d082ca
+2019-12-16 18:01:57  [ http-nio-8080-exec-32:734 ] - [ DEBUG ]  incremented pending_acquires: 3
+2019-12-16 18:01:57  [ http-nio-8080-exec-32:734 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [3],  attempts_remaining: 30
+2019-12-16 18:01:57  [ http-nio-8080-exec-32:734 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@338b2583: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@7978bc47
+2019-12-16 18:01:57  [ http-nio-8080-exec-32:734 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@133539d6 config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2019-12-16 18:01:57  [ http-nio-8080-exec-32:735 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2019-12-16 18:01:57  [ http-nio-8080-exec-32:735 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2019-12-16 18:01:57  [ http-nio-8080-exec-32:736 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@133539d6 [managed: 0, unused: 0, excluded: 0]
+2019-12-16 18:01:57  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:821 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@5e157daf.acquireResource() returning. 
+2019-12-16 18:01:57  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:821 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@5e157daf.acquireResource() returning. 
+2019-12-16 18:01:57  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:821 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@5e157daf.acquireResource() returning. 
+2019-12-16 18:01:57  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:826 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@133539d6 [managed: 1, unused: 1, excluded: 0]
+2019-12-16 18:01:57  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:827 ] - [ DEBUG ]  decremented pending_acquires: 2
+2019-12-16 18:01:57  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:827 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 18:01:57  [ http-nio-8080-exec-32:827 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@133539d6 [managed: 1, unused: 0, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7e0ae294)
+2019-12-16 18:01:57  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:827 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@133539d6 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7e0ae294)
+2019-12-16 18:01:57  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:827 ] - [ DEBUG ]  decremented pending_acquires: 1
+2019-12-16 18:01:57  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:827 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 18:01:57  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:827 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@133539d6 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7e0ae294)
+2019-12-16 18:01:57  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:828 ] - [ DEBUG ]  decremented pending_acquires: 0
+2019-12-16 18:01:57  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:828 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [0],  attempts_remaining: 30
+2019-12-16 18:01:57  [ http-nio-8080-exec-32:863 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@338b2583: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@27ec0967
+2019-12-16 18:01:57  [ http-nio-8080-exec-32:863 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@133539d6 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7e0ae294)
+2019-12-16 18:02:01  [ http-nio-8080-exec-31:4360 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@133539d6 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7e0ae294)
+2019-12-16 18:02:01  [ http-nio-8080-exec-31:4363 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@338b2583: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@51fdee78
+2019-12-16 18:02:01  [ http-nio-8080-exec-31:4364 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@133539d6 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@7e0ae294)
+2019-12-16 18:08:46  [ http-nio-8080-exec-6:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-12-16 18:08:46  [ http-nio-8080-exec-6:392 ] - [ INFO ]  Initializing c3p0-0.9.2-pre5 [built 29-September-2012 19:59:04 +0000; debug? true; trace: 10]
+2019-12-16 18:08:46  [ http-nio-8080-exec-6:500 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hgf7k1a73xnn0718ayknc|720edbd7] registered.
+2019-12-16 18:08:46  [ http-nio-8080-exec-6:736 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgf7k1a73xnn0718ayknc|720edbd7, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgf7k1a73xnn0718ayknc|720edbd7, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/syjf_system?useUnicode=true;characterEncoding=UTF8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2019-12-16 18:08:46  [ http-nio-8080-exec-6:841 ] - [ DEBUG ]  incremented pending_acquires: 1
+2019-12-16 18:08:46  [ http-nio-8080-exec-6:842 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 18:08:46  [ http-nio-8080-exec-6:842 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@5873d99: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@3afd682b
+2019-12-16 18:08:46  [ http-nio-8080-exec-6:842 ] - [ DEBUG ]  incremented pending_acquires: 2
+2019-12-16 18:08:46  [ http-nio-8080-exec-6:843 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 18:08:46  [ http-nio-8080-exec-6:843 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@5873d99: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@5130249f
+2019-12-16 18:08:46  [ http-nio-8080-exec-6:843 ] - [ DEBUG ]  incremented pending_acquires: 3
+2019-12-16 18:08:46  [ http-nio-8080-exec-6:843 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [3],  attempts_remaining: 30
+2019-12-16 18:08:46  [ http-nio-8080-exec-6:843 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@5873d99: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@142568ce
+2019-12-16 18:08:46  [ http-nio-8080-exec-6:844 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@2872e426 config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2019-12-16 18:08:46  [ http-nio-8080-exec-6:844 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2019-12-16 18:08:46  [ http-nio-8080-exec-6:845 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2019-12-16 18:08:46  [ http-nio-8080-exec-6:846 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@2872e426 [managed: 0, unused: 0, excluded: 0]
+2019-12-16 18:08:47  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:1711 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@22aef87e.acquireResource() returning. 
+2019-12-16 18:08:47  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:1711 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@22aef87e.acquireResource() returning. 
+2019-12-16 18:08:47  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:1716 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@2872e426 [managed: 1, unused: 1, excluded: 0]
+2019-12-16 18:08:47  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:1716 ] - [ DEBUG ]  decremented pending_acquires: 2
+2019-12-16 18:08:47  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:1716 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 18:08:47  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:1716 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@2872e426 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@3b31ff27)
+2019-12-16 18:08:47  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:1717 ] - [ DEBUG ]  decremented pending_acquires: 1
+2019-12-16 18:08:47  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:1717 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 18:08:47  [ http-nio-8080-exec-6:1717 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@2872e426 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@3b31ff27)
+2019-12-16 18:08:47  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:1744 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@22aef87e.acquireResource() returning. 
+2019-12-16 18:08:47  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:1745 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@2872e426 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@3b31ff27)
+2019-12-16 18:08:47  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:1745 ] - [ DEBUG ]  decremented pending_acquires: 0
+2019-12-16 18:08:47  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:1745 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [0],  attempts_remaining: 30
+2019-12-16 18:08:47  [ http-nio-8080-exec-6:1776 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@5873d99: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@790324ca
+2019-12-16 18:08:47  [ http-nio-8080-exec-6:1776 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@2872e426 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@3b31ff27)
+2019-12-16 18:08:59  [ http-nio-8080-exec-8:13165 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@2872e426 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@3b31ff27)
+2019-12-16 18:08:59  [ http-nio-8080-exec-8:13169 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@5873d99: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@58a129c1
+2019-12-16 18:08:59  [ http-nio-8080-exec-8:13170 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@2872e426 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@3b31ff27)
+2019-12-16 18:10:29  [ http-nio-8080-exec-2:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-12-16 18:10:29  [ http-nio-8080-exec-2:291 ] - [ INFO ]  Initializing c3p0-0.9.2-pre5 [built 29-September-2012 19:59:04 +0000; debug? true; trace: 10]
+2019-12-16 18:10:29  [ http-nio-8080-exec-2:301 ] - [ WARN ]  A C3P0Registry mbean is already registered. This probably means that an application using c3p0 was undeployed, but not all PooledDataSources were closed prior to undeployment. This may lead to resource leaks over time. Please take care to close all PooledDataSources.
+2019-12-16 18:10:29  [ http-nio-8080-exec-2:406 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hgf7k1a73xpufizsvhnv|3d5e28bf] registered.
+2019-12-16 18:10:29  [ http-nio-8080-exec-2:670 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgf7k1a73xpufizsvhnv|3d5e28bf, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgf7k1a73xpufizsvhnv|3d5e28bf, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/syjf_system?useUnicode=true;characterEncoding=UTF8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2019-12-16 18:10:29  [ http-nio-8080-exec-2:779 ] - [ DEBUG ]  incremented pending_acquires: 1
+2019-12-16 18:10:29  [ http-nio-8080-exec-2:779 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 18:10:29  [ http-nio-8080-exec-2:779 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@41aa0051: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@13a1f20
+2019-12-16 18:10:29  [ http-nio-8080-exec-2:779 ] - [ DEBUG ]  incremented pending_acquires: 2
+2019-12-16 18:10:29  [ http-nio-8080-exec-2:780 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 18:10:29  [ http-nio-8080-exec-2:780 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@41aa0051: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@5a371374
+2019-12-16 18:10:29  [ http-nio-8080-exec-2:780 ] - [ DEBUG ]  incremented pending_acquires: 3
+2019-12-16 18:10:29  [ http-nio-8080-exec-2:780 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [3],  attempts_remaining: 30
+2019-12-16 18:10:29  [ http-nio-8080-exec-2:780 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@41aa0051: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@309a2941
+2019-12-16 18:10:29  [ http-nio-8080-exec-2:780 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@21230f8b config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2019-12-16 18:10:29  [ http-nio-8080-exec-2:781 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2019-12-16 18:10:29  [ http-nio-8080-exec-2:781 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2019-12-16 18:10:29  [ http-nio-8080-exec-2:781 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@21230f8b [managed: 0, unused: 0, excluded: 0]
+2019-12-16 18:10:29  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:866 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@17c84c95.acquireResource() returning. 
+2019-12-16 18:10:29  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:866 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@17c84c95.acquireResource() returning. 
+2019-12-16 18:10:29  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:868 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@17c84c95.acquireResource() returning. 
+2019-12-16 18:10:30  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:872 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@21230f8b [managed: 1, unused: 1, excluded: 0]
+2019-12-16 18:10:30  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:873 ] - [ DEBUG ]  decremented pending_acquires: 2
+2019-12-16 18:10:30  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:873 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 18:10:30  [ http-nio-8080-exec-2:873 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@21230f8b [managed: 1, unused: 0, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5fef689f)
+2019-12-16 18:10:30  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:873 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@21230f8b [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5fef689f)
+2019-12-16 18:10:30  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:874 ] - [ DEBUG ]  decremented pending_acquires: 1
+2019-12-16 18:10:30  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:874 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 18:10:30  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:874 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@21230f8b [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5fef689f)
+2019-12-16 18:10:30  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:874 ] - [ DEBUG ]  decremented pending_acquires: 0
+2019-12-16 18:10:30  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:874 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [0],  attempts_remaining: 30
+2019-12-16 18:10:30  [ http-nio-8080-exec-2:909 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@41aa0051: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@4b00797f
+2019-12-16 18:10:30  [ http-nio-8080-exec-2:910 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@21230f8b [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5fef689f)
+2019-12-16 18:10:36  [ http-nio-8080-exec-5:7068 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@21230f8b [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5fef689f)
+2019-12-16 18:10:36  [ http-nio-8080-exec-5:7071 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@41aa0051: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@24899234
+2019-12-16 18:10:36  [ http-nio-8080-exec-5:7072 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@21230f8b [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5fef689f)
+2019-12-16 18:44:07  [ http-nio-8080-exec-6:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-12-16 18:44:08  [ http-nio-8080-exec-6:377 ] - [ INFO ]  Initializing c3p0-0.9.2-pre5 [built 29-September-2012 19:59:04 +0000; debug? true; trace: 10]
+2019-12-16 18:44:08  [ http-nio-8080-exec-6:487 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hgf7k1a73yx45f1bnj3wf|38dc15a4] registered.
+2019-12-16 18:44:08  [ http-nio-8080-exec-6:738 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgf7k1a73yx45f1bnj3wf|38dc15a4, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgf7k1a73yx45f1bnj3wf|38dc15a4, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/syjf_system?useUnicode=true;characterEncoding=UTF8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2019-12-16 18:44:08  [ http-nio-8080-exec-6:835 ] - [ DEBUG ]  incremented pending_acquires: 1
+2019-12-16 18:44:08  [ http-nio-8080-exec-6:835 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 18:44:08  [ http-nio-8080-exec-6:836 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@124c5d0c: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@2470921b
+2019-12-16 18:44:08  [ http-nio-8080-exec-6:836 ] - [ DEBUG ]  incremented pending_acquires: 2
+2019-12-16 18:44:08  [ http-nio-8080-exec-6:836 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 18:44:08  [ http-nio-8080-exec-6:837 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@124c5d0c: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@37d39ea9
+2019-12-16 18:44:08  [ http-nio-8080-exec-6:837 ] - [ DEBUG ]  incremented pending_acquires: 3
+2019-12-16 18:44:08  [ http-nio-8080-exec-6:837 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [3],  attempts_remaining: 30
+2019-12-16 18:44:08  [ http-nio-8080-exec-6:837 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@124c5d0c: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@635ec6d7
+2019-12-16 18:44:08  [ http-nio-8080-exec-6:837 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@138a438d config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2019-12-16 18:44:08  [ http-nio-8080-exec-6:838 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2019-12-16 18:44:08  [ http-nio-8080-exec-6:838 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2019-12-16 18:44:08  [ http-nio-8080-exec-6:839 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@138a438d [managed: 0, unused: 0, excluded: 0]
+2019-12-16 18:44:09  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:1776 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@11a6b3e.acquireResource() returning. 
+2019-12-16 18:44:09  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:1782 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@138a438d [managed: 1, unused: 1, excluded: 0]
+2019-12-16 18:44:09  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:1783 ] - [ DEBUG ]  decremented pending_acquires: 2
+2019-12-16 18:44:09  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:1783 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 18:44:09  [ http-nio-8080-exec-6:1783 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@138a438d [managed: 1, unused: 0, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@73f28928)
+2019-12-16 18:44:09  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:1833 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@11a6b3e.acquireResource() returning. 
+2019-12-16 18:44:09  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:1833 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@11a6b3e.acquireResource() returning. 
+2019-12-16 18:44:09  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:1834 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@138a438d [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@73f28928)
+2019-12-16 18:44:09  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:1834 ] - [ DEBUG ]  decremented pending_acquires: 1
+2019-12-16 18:44:09  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:1834 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 18:44:09  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:1834 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@138a438d [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@73f28928)
+2019-12-16 18:44:09  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:1835 ] - [ DEBUG ]  decremented pending_acquires: 0
+2019-12-16 18:44:09  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:1835 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [0],  attempts_remaining: 30
+2019-12-16 18:44:09  [ http-nio-8080-exec-6:1840 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@124c5d0c: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@76990e71
+2019-12-16 18:44:09  [ http-nio-8080-exec-6:1840 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@138a438d [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@73f28928)
+2019-12-16 18:44:14  [ http-nio-8080-exec-7:6391 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@138a438d [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@73f28928)
+2019-12-16 18:44:14  [ http-nio-8080-exec-7:6394 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@124c5d0c: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@7b6146aa
+2019-12-16 18:44:14  [ http-nio-8080-exec-7:6395 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@138a438d [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@73f28928)
+2019-12-16 18:47:37  [ http-nio-8080-exec-10:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-12-16 18:47:37  [ http-nio-8080-exec-10:292 ] - [ INFO ]  Initializing c3p0-0.9.2-pre5 [built 29-September-2012 19:59:04 +0000; debug? true; trace: 10]
+2019-12-16 18:47:37  [ http-nio-8080-exec-10:301 ] - [ WARN ]  A C3P0Registry mbean is already registered. This probably means that an application using c3p0 was undeployed, but not all PooledDataSources were closed prior to undeployment. This may lead to resource leaks over time. Please take care to close all PooledDataSources.
+2019-12-16 18:47:38  [ http-nio-8080-exec-10:402 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hgf7k1a73z1m0a43fvnu|22e9673e] registered.
+2019-12-16 18:47:38  [ http-nio-8080-exec-10:648 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgf7k1a73z1m0a43fvnu|22e9673e, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgf7k1a73z1m0a43fvnu|22e9673e, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/syjf_system?useUnicode=true;characterEncoding=UTF8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2019-12-16 18:47:38  [ http-nio-8080-exec-10:749 ] - [ DEBUG ]  incremented pending_acquires: 1
+2019-12-16 18:47:38  [ http-nio-8080-exec-10:750 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 18:47:38  [ http-nio-8080-exec-10:750 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@491981d2: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@691dcdfb
+2019-12-16 18:47:38  [ http-nio-8080-exec-10:750 ] - [ DEBUG ]  incremented pending_acquires: 2
+2019-12-16 18:47:38  [ http-nio-8080-exec-10:751 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 18:47:38  [ http-nio-8080-exec-10:751 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@491981d2: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@3876d926
+2019-12-16 18:47:38  [ http-nio-8080-exec-10:751 ] - [ DEBUG ]  incremented pending_acquires: 3
+2019-12-16 18:47:38  [ http-nio-8080-exec-10:751 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [3],  attempts_remaining: 30
+2019-12-16 18:47:38  [ http-nio-8080-exec-10:751 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@491981d2: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@11059638
+2019-12-16 18:47:38  [ http-nio-8080-exec-10:752 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@149782db config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2019-12-16 18:47:38  [ http-nio-8080-exec-10:752 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2019-12-16 18:47:38  [ http-nio-8080-exec-10:752 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2019-12-16 18:47:38  [ http-nio-8080-exec-10:752 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@149782db [managed: 0, unused: 0, excluded: 0]
+2019-12-16 18:47:38  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:834 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@6e97343b.acquireResource() returning. 
+2019-12-16 18:47:38  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:834 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@6e97343b.acquireResource() returning. 
+2019-12-16 18:47:38  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:840 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@149782db [managed: 1, unused: 1, excluded: 0]
+2019-12-16 18:47:38  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:841 ] - [ DEBUG ]  decremented pending_acquires: 2
+2019-12-16 18:47:38  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:841 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 18:47:38  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:841 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@149782db [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@18d42dd3)
+2019-12-16 18:47:38  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:841 ] - [ DEBUG ]  decremented pending_acquires: 1
+2019-12-16 18:47:38  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:842 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 18:47:38  [ http-nio-8080-exec-10:842 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@149782db [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@18d42dd3)
+2019-12-16 18:47:38  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:843 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@6e97343b.acquireResource() returning. 
+2019-12-16 18:47:38  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:843 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@149782db [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@18d42dd3)
+2019-12-16 18:47:38  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:843 ] - [ DEBUG ]  decremented pending_acquires: 0
+2019-12-16 18:47:38  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:844 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [0],  attempts_remaining: 30
+2019-12-16 18:47:38  [ http-nio-8080-exec-10:879 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@491981d2: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@30a5e758
+2019-12-16 18:47:38  [ http-nio-8080-exec-10:880 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@149782db [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@18d42dd3)
+2019-12-16 18:47:43  [ http-nio-8080-exec-12:5883 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@149782db [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@18d42dd3)
+2019-12-16 18:47:43  [ http-nio-8080-exec-12:5886 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@491981d2: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@18c8640
+2019-12-16 18:47:43  [ http-nio-8080-exec-12:5887 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@149782db [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@18d42dd3)
+2019-12-16 18:51:32  [ http-nio-8080-exec-18:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-12-16 18:51:33  [ http-nio-8080-exec-18:305 ] - [ INFO ]  Initializing c3p0-0.9.2-pre5 [built 29-September-2012 19:59:04 +0000; debug? true; trace: 10]
+2019-12-16 18:51:33  [ http-nio-8080-exec-18:315 ] - [ WARN ]  A C3P0Registry mbean is already registered. This probably means that an application using c3p0 was undeployed, but not all PooledDataSources were closed prior to undeployment. This may lead to resource leaks over time. Please take care to close all PooledDataSources.
+2019-12-16 18:51:33  [ http-nio-8080-exec-18:410 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hgf7k1a73z6nen1l6kkr6|7156b955] registered.
+2019-12-16 18:51:33  [ http-nio-8080-exec-18:657 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgf7k1a73z6nen1l6kkr6|7156b955, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgf7k1a73z6nen1l6kkr6|7156b955, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/syjf_system?useUnicode=true;characterEncoding=UTF8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2019-12-16 18:51:33  [ http-nio-8080-exec-18:761 ] - [ DEBUG ]  incremented pending_acquires: 1
+2019-12-16 18:51:33  [ http-nio-8080-exec-18:761 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 18:51:33  [ http-nio-8080-exec-18:762 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@4d0aee23: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@26bbec
+2019-12-16 18:51:33  [ http-nio-8080-exec-18:762 ] - [ DEBUG ]  incremented pending_acquires: 2
+2019-12-16 18:51:33  [ http-nio-8080-exec-18:762 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 18:51:33  [ http-nio-8080-exec-18:762 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@4d0aee23: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@39020263
+2019-12-16 18:51:33  [ http-nio-8080-exec-18:762 ] - [ DEBUG ]  incremented pending_acquires: 3
+2019-12-16 18:51:33  [ http-nio-8080-exec-18:763 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [3],  attempts_remaining: 30
+2019-12-16 18:51:33  [ http-nio-8080-exec-18:763 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@4d0aee23: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@30fc83a6
+2019-12-16 18:51:33  [ http-nio-8080-exec-18:763 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@2a1d186c config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2019-12-16 18:51:33  [ http-nio-8080-exec-18:763 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2019-12-16 18:51:33  [ http-nio-8080-exec-18:764 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2019-12-16 18:51:33  [ http-nio-8080-exec-18:764 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@2a1d186c [managed: 0, unused: 0, excluded: 0]
+2019-12-16 18:51:33  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:845 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@3d4e6c99.acquireResource() returning. 
+2019-12-16 18:51:33  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:845 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@3d4e6c99.acquireResource() returning. 
+2019-12-16 18:51:33  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:850 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@2a1d186c [managed: 1, unused: 1, excluded: 0]
+2019-12-16 18:51:33  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:851 ] - [ DEBUG ]  decremented pending_acquires: 2
+2019-12-16 18:51:33  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:851 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 18:51:33  [ http-nio-8080-exec-18:851 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@2a1d186c [managed: 1, unused: 0, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@30a8ff5f)
+2019-12-16 18:51:33  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:851 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@2a1d186c [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@30a8ff5f)
+2019-12-16 18:51:33  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:852 ] - [ DEBUG ]  decremented pending_acquires: 1
+2019-12-16 18:51:33  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:852 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 18:51:33  [ http-nio-8080-exec-18:891 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@4d0aee23: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@38aff47f
+2019-12-16 18:51:33  [ http-nio-8080-exec-18:892 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@2a1d186c [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@30a8ff5f)
+2019-12-16 18:51:33  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:896 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@3d4e6c99.acquireResource() returning. 
+2019-12-16 18:51:33  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:897 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@2a1d186c [managed: 3, unused: 3, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@30a8ff5f)
+2019-12-16 18:51:33  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:897 ] - [ DEBUG ]  decremented pending_acquires: 0
+2019-12-16 18:51:33  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:897 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [0],  attempts_remaining: 30
+2019-12-16 18:51:37  [ http-nio-8080-exec-15:4344 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@2a1d186c [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@30a8ff5f)
+2019-12-16 18:51:37  [ http-nio-8080-exec-15:4348 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@4d0aee23: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@a2a3ac7
+2019-12-16 18:51:37  [ http-nio-8080-exec-15:4349 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@2a1d186c [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@30a8ff5f)
+2019-12-16 18:55:03  [ http-nio-8080-exec-32:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-12-16 18:55:03  [ http-nio-8080-exec-32:294 ] - [ INFO ]  Initializing c3p0-0.9.2-pre5 [built 29-September-2012 19:59:04 +0000; debug? true; trace: 10]
+2019-12-16 18:55:03  [ http-nio-8080-exec-32:304 ] - [ WARN ]  A C3P0Registry mbean is already registered. This probably means that an application using c3p0 was undeployed, but not all PooledDataSources were closed prior to undeployment. This may lead to resource leaks over time. Please take care to close all PooledDataSources.
+2019-12-16 18:55:03  [ http-nio-8080-exec-32:399 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hgf7k1a73zb61m1j34nr6|bd5d765] registered.
+2019-12-16 18:55:04  [ http-nio-8080-exec-32:641 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgf7k1a73zb61m1j34nr6|bd5d765, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgf7k1a73zb61m1j34nr6|bd5d765, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/syjf_system?useUnicode=true;characterEncoding=UTF8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2019-12-16 18:55:04  [ http-nio-8080-exec-32:742 ] - [ DEBUG ]  incremented pending_acquires: 1
+2019-12-16 18:55:04  [ http-nio-8080-exec-32:743 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 18:55:04  [ http-nio-8080-exec-32:743 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@24622987: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@1433da8f
+2019-12-16 18:55:04  [ http-nio-8080-exec-32:743 ] - [ DEBUG ]  incremented pending_acquires: 2
+2019-12-16 18:55:04  [ http-nio-8080-exec-32:743 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 18:55:04  [ http-nio-8080-exec-32:743 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@24622987: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@65dae6d5
+2019-12-16 18:55:04  [ http-nio-8080-exec-32:744 ] - [ DEBUG ]  incremented pending_acquires: 3
+2019-12-16 18:55:04  [ http-nio-8080-exec-32:744 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [3],  attempts_remaining: 30
+2019-12-16 18:55:04  [ http-nio-8080-exec-32:744 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@24622987: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@4eb439e5
+2019-12-16 18:55:04  [ http-nio-8080-exec-32:744 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@7baf1fa5 config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2019-12-16 18:55:04  [ http-nio-8080-exec-32:744 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2019-12-16 18:55:04  [ http-nio-8080-exec-32:745 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2019-12-16 18:55:04  [ http-nio-8080-exec-32:745 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@7baf1fa5 [managed: 0, unused: 0, excluded: 0]
+2019-12-16 18:55:04  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:822 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@6e4a646a.acquireResource() returning. 
+2019-12-16 18:55:04  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:822 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@6e4a646a.acquireResource() returning. 
+2019-12-16 18:55:04  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:827 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@7baf1fa5 [managed: 1, unused: 1, excluded: 0]
+2019-12-16 18:55:04  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:828 ] - [ DEBUG ]  decremented pending_acquires: 2
+2019-12-16 18:55:04  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:828 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 18:55:04  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:828 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@7baf1fa5 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@504bfa3c)
+2019-12-16 18:55:04  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:828 ] - [ DEBUG ]  decremented pending_acquires: 1
+2019-12-16 18:55:04  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:828 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 18:55:04  [ http-nio-8080-exec-32:828 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@7baf1fa5 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@504bfa3c)
+2019-12-16 18:55:04  [ http-nio-8080-exec-32:864 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@24622987: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@2196b6d3
+2019-12-16 18:55:04  [ http-nio-8080-exec-32:864 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@7baf1fa5 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@504bfa3c)
+2019-12-16 18:55:04  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:891 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@6e4a646a.acquireResource() returning. 
+2019-12-16 18:55:04  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:891 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@7baf1fa5 [managed: 3, unused: 3, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@504bfa3c)
+2019-12-16 18:55:04  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:891 ] - [ DEBUG ]  decremented pending_acquires: 0
+2019-12-16 18:55:04  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:891 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [0],  attempts_remaining: 30
+2019-12-16 18:55:11  [ http-nio-8080-exec-29:7693 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@7baf1fa5 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@504bfa3c)
+2019-12-16 18:55:11  [ http-nio-8080-exec-29:7699 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@24622987: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@7ad594e2
+2019-12-16 18:55:11  [ http-nio-8080-exec-29:7699 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@7baf1fa5 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@504bfa3c)
+2019-12-16 18:57:21  [ http-nio-8080-exec-40:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-12-16 18:57:21  [ http-nio-8080-exec-40:300 ] - [ INFO ]  Initializing c3p0-0.9.2-pre5 [built 29-September-2012 19:59:04 +0000; debug? true; trace: 10]
+2019-12-16 18:57:21  [ http-nio-8080-exec-40:309 ] - [ WARN ]  A C3P0Registry mbean is already registered. This probably means that an application using c3p0 was undeployed, but not all PooledDataSources were closed prior to undeployment. This may lead to resource leaks over time. Please take care to close all PooledDataSources.
+2019-12-16 18:57:21  [ http-nio-8080-exec-40:406 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hgf7k1a73ze48t18wmfx0|69ef3b79] registered.
+2019-12-16 18:57:21  [ http-nio-8080-exec-40:661 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgf7k1a73ze48t18wmfx0|69ef3b79, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgf7k1a73ze48t18wmfx0|69ef3b79, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/syjf_system?useUnicode=true;characterEncoding=UTF8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2019-12-16 18:57:21  [ http-nio-8080-exec-40:779 ] - [ DEBUG ]  incremented pending_acquires: 1
+2019-12-16 18:57:21  [ http-nio-8080-exec-40:779 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 18:57:21  [ http-nio-8080-exec-40:780 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@54cd1a37: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@13df1e58
+2019-12-16 18:57:21  [ http-nio-8080-exec-40:780 ] - [ DEBUG ]  incremented pending_acquires: 2
+2019-12-16 18:57:21  [ http-nio-8080-exec-40:780 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 18:57:21  [ http-nio-8080-exec-40:780 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@54cd1a37: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@1e8f6029
+2019-12-16 18:57:21  [ http-nio-8080-exec-40:781 ] - [ DEBUG ]  incremented pending_acquires: 3
+2019-12-16 18:57:21  [ http-nio-8080-exec-40:781 ] - [ DEBUG ]  Starting acquisition series. Incremented pending_acquires [3],  attempts_remaining: 30
+2019-12-16 18:57:21  [ http-nio-8080-exec-40:781 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@54cd1a37: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@369b9569
+2019-12-16 18:57:21  [ http-nio-8080-exec-40:781 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@abb3d2f config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2019-12-16 18:57:21  [ http-nio-8080-exec-40:781 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2019-12-16 18:57:21  [ http-nio-8080-exec-40:782 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2019-12-16 18:57:21  [ http-nio-8080-exec-40:782 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@abb3d2f [managed: 0, unused: 0, excluded: 0]
+2019-12-16 18:57:22  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:867 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1a188479.acquireResource() returning. 
+2019-12-16 18:57:22  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:867 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1a188479.acquireResource() returning. 
+2019-12-16 18:57:22  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:867 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@1a188479.acquireResource() returning. 
+2019-12-16 18:57:22  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:872 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@abb3d2f [managed: 1, unused: 1, excluded: 0]
+2019-12-16 18:57:22  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:873 ] - [ DEBUG ]  decremented pending_acquires: 2
+2019-12-16 18:57:22  [ C3P0PooledConnectionPoolManager-Helper Thread-#2:873 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [2],  attempts_remaining: 30
+2019-12-16 18:57:22  [ http-nio-8080-exec-40:873 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@abb3d2f [managed: 1, unused: 0, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@61590117)
+2019-12-16 18:57:22  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:873 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@abb3d2f [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@61590117)
+2019-12-16 18:57:22  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:873 ] - [ DEBUG ]  decremented pending_acquires: 1
+2019-12-16 18:57:22  [ C3P0PooledConnectionPoolManager-Helper Thread-#0:873 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [1],  attempts_remaining: 30
+2019-12-16 18:57:22  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:873 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@abb3d2f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@61590117)
+2019-12-16 18:57:22  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:874 ] - [ DEBUG ]  decremented pending_acquires: 0
+2019-12-16 18:57:22  [ C3P0PooledConnectionPoolManager-Helper Thread-#1:874 ] - [ DEBUG ]  Acquisition series terminated successfully. Decremented pending_acquires [0],  attempts_remaining: 30
+2019-12-16 18:57:22  [ http-nio-8080-exec-40:917 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@54cd1a37: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@68d8f3ea
+2019-12-16 18:57:22  [ http-nio-8080-exec-40:918 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@abb3d2f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@61590117)
+2019-12-16 18:57:26  [ http-nio-8080-exec-38:5494 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@abb3d2f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@61590117)
+2019-12-16 18:57:26  [ http-nio-8080-exec-38:5497 ] - [ DEBUG ]  com.mchange.v2.async.ThreadPoolAsynchronousRunner@54cd1a37: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@33df2a32
+2019-12-16 18:57:26  [ http-nio-8080-exec-38:5497 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@abb3d2f [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@61590117)
